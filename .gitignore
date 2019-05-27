@@ -12,4 +12,5 @@
 *.out
 
 .idea/
+.vs/
 .DS_Store

@@ -1,5 +1,47 @@
 # go-wappalyzer
-Go implement Wappalyzer. with web dashboard support.
+Go implement Wappalyzer. with web ui support.
+
+# Quick start
+* [Online Demo](http://dato.live/) this may be slow, the server is too fuck but really cheap :)
+
+# Web ui screenshot
+
+![./docs/img/screenshot.jpg](./docs/img/screenshot.jpg)
+
+# usage
+```
+Usage of gowappalyzer:
+  -apps string
+        app definition file. (default "apps.json")
+  -crawl int
+        links to follow from the root page (default 0)
+  -host string
+        single host to test
+  -hosts string
+        filename with hosts, one host per line.
+  -listen string
+        Web server listen address (default "0.0.0.0:8080")
+  -output string
+        output file (default "data.json")
+  -type string
+        run type, standalone - single tool model, web - web server model (default "standalone")
+  -update
+        update apps file
+  -verbose
+        show verbose message (default true)
+  -worker int
+        number of concurrent worker (default 4)
+
+```
+# update apps.json
+* Command `./gowappalyzer -update`
+
+# run web
+* Command `./gowappalyzer -type web -listen 0.0.0.0:8080`
+* Visit [http://localhost:8080](http://localhost:8080)
+* API, PostMan example
+![./docs/img/api.jpg](./docs/img/api.jpg)
+
 
 # example output for : https://github.com
 
@@ -185,3 +227,9 @@ Go implement Wappalyzer. with web dashboard support.
     "web_desc":"GitHub brings together the world’s largest community of developers to discover, share, and build better software. From open source projects to private team repositories, we’re your all-in-one platform for collaborative development."
 }
 ```
+
+# thanks
+
+* [arwes/arwes](https://github.com/arwes/arwes) for great react ui components.
+* [webanalyze](https://github.com/rverton/webanalyze) for great implementation of go version [AliasIO/Wappalyzer](https://github.com/AliasIO/Wappalyzer)
+* [mjibson/esc](https://github.com/mjibson/esc) for great embeds files into go programs and provides http.FileSystem interfaces to them.

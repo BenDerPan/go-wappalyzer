@@ -2,7 +2,7 @@
 Go implement Wappalyzer. with web ui support.
 
 # Quick start
-* [Online Demo](http://dato.live/) this may be slow, the server is too fuck but really cheap :)
+* [Online Demo - Out of service now!!! Expired of my VPS](http://dato.live/) this may be slow, the server is too fuck but really cheap :)
 
 # Web ui screenshot
 
